@@ -23,6 +23,6 @@ jobs:
       - run: npm run emu:start:firestore &
       - name: エミュレータの起動待機...
         run: sleep 10
-      - run: npm ci-test
+      - run: npm run ci-test
         env:
           CI: true
