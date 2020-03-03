@@ -1,3 +1,5 @@
+![CI](https://github.com/rightcode/firestore-test-supporter/workflows/CI/badge.svg)
+
 # インストール
 ```bash
 npm install github:rightcode/firestore-test-supporter
