@@ -1,0 +1,36 @@
+{
+  "name": "firestore-test-supporter",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "ci-test": "jest --forceExit --detectOpenHandles --maxWorkers=1",
+    "emu:start:firestore": "firebase emulators:start --only firestore",
+    "build": "rimraf dist && tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rightcode/firestore-test-supporter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rightcode/firestore-test-supporter/issues"
+  },
+  "homepage": "https://github.com/rightcode/firestore-test-supporter#readme",
+  "dependencies": {
+    "@firebase/testing": "^0.15.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.3",
+    "jest": "24.9.0",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.8.2"
+  }
+}
