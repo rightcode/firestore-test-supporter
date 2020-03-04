@@ -4,8 +4,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest",
-    "test-watch": "jest --watch",
+    "test": "jest --maxWorkers=1",
+    "test-watch": "jest --watch --maxWorkers=1",
     "ci-test": "jest --forceExit --detectOpenHandles --maxWorkers=1",
     "emu:start:firestore": "firebase emulators:start --only firestore",
     "build": "rimraf dist && tsc",
